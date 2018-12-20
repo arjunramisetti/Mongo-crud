@@ -1,6 +1,7 @@
 package com.iton.vaadinmongosample;
 
 
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.HtmlImport;
 import com.vaadin.flow.component.orderedlayout.BoxSizing;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -22,7 +23,8 @@ public class MainView extends VerticalLayout {
    
         SampleScreen screen = new SampleScreen();
         addClassName("mainclass");
-        add(screen);
+//        add(screen);
+        add(new Button("Click"));
         screen.setPadding(false);
 //        screen.setHeight("-1px");
         screen.getStyle().set( "height","auto" );
